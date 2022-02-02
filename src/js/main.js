@@ -1,3 +1,4 @@
+import calc from "./modules/calc";
 import checkTextInputs from "./modules/chekTextInputs";
 import forms from "./modules/forms";
 import mask from "./modules/mask";
@@ -15,5 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     mask('[name="phone"]');
     checkTextInputs('[name="name"]');
     checkTextInputs('[name="message"]');
-    showMoreStyles('.button-styles', '#styles .row')
+    showMoreStyles('.button-styles', '#styles .row');
+    calc('#size', '#material', '#options', '.promocode', '.calc-price');
 });
