@@ -29,6 +29,7 @@ const sliders = (slides, dir, prev, next) => {
   try {
     const prevBtn = document.querySelector(prev),
       nextBtn = document.querySelector(next);
+      
     prevBtn.addEventListener('click', () => {
       plusSlides(-1);
       items[slideIndex-1].classList.remove('slideInLeft');
@@ -40,7 +41,7 @@ const sliders = (slides, dir, prev, next) => {
       items[slideIndex-1].classList.remove('slideInRight');
       items[slideIndex-1].classList.add('slideInLeft');
     });
-  } catch (e) {console.log(e);}
+  } catch (e) {} //{console.log(e);}
 
   function activateAnimation() {
     
